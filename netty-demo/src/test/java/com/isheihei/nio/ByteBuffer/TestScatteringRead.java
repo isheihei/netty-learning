@@ -1,11 +1,11 @@
-package com.isheihei.nio.c1;
+package com.isheihei.nio.ByteBuffer;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
-import static com.isheihei.nio.c1.ByteBufferUtil.debugAll;
+import static com.isheihei.nio.ByteBuffer.ByteBufferUtil.debugAll;
 
 public class TestScatteringRead {
     public static void main(String[] args) {

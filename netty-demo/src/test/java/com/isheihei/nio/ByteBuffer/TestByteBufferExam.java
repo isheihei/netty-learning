@@ -1,9 +1,8 @@
-package com.isheihei.nio.c1;
+package com.isheihei.nio.ByteBuffer;
 
 import java.nio.ByteBuffer;
-import java.util.Arrays;
 
-import static com.isheihei.nio.c1.ByteBufferUtil.debugAll;
+import static com.isheihei.nio.ByteBuffer.ByteBufferUtil.debugAll;
 
 
 /**

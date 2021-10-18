@@ -1,4 +1,4 @@
-package com.isheihei.nio.c1;
+package com.isheihei.nio.ByteBuffer;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
