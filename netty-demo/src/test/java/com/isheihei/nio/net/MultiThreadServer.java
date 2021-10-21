@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static com.isheihei.nio.ByteBuffer.ByteBufferUtil.debugAll;
+import static com.isheihei.nio.bytebuffer.ByteBufferUtil.debugAll;
 
 @Slf4j
 public class MultiThreadServer {

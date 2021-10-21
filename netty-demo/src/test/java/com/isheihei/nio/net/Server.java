@@ -9,7 +9,7 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
 
-import static com.isheihei.nio.ByteBuffer.ByteBufferUtil.debugAll;
+import static com.isheihei.nio.bytebuffer.ByteBufferUtil.debugAll;
 
 @Slf4j
 public class Server {
