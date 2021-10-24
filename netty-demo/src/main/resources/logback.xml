@@ -21,7 +21,7 @@
 
     <!-- 用来控制查看那个类的日志内容（对mybatis name 代表命名空间） -->
     <!--单独指定某个包 进行日志输出 （这里 coma 就是不想 启动 netty debug打印）-->
-    <logger name="com" level="DEBUG" additivity="false"> <!--additivity =【true：反馈到<root 里面打印或者写出日志，false：不反馈】-->
+    <logger name="cn" level="DEBUG" additivity="false"> <!--additivity =【true：反馈到<root 里面打印或者写出日志，false：不反馈】-->
         <appender-ref ref="STDOUT"/>
     </logger>
     <logger name="io.netty.handler.logging.LoggingHandler" level="DEBUG" additivity="false">

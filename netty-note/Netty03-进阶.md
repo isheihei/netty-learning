@@ -638,6 +638,14 @@ public class HelloWorldClient {
 ```java
 // 最大长度，长度偏移，长度占用字节，长度调整，剥离字节数
 ch.pipeline().addLast(new LengthFieldBasedFrameDecoder(1024, 0, 1, 0, 1));
+
+LengthFieldBasedFrameDecoder()
+五个参数的含义：
+    - 最大长度
+    - 长度字段偏移量
+    - 长度字段长度
+    - 长度字段的结束位置为基准， 还有几个字节是内容
+    - 从头剥离几个字节（有些头信息不想要就忽略）
 ```
 
 客户端代码
