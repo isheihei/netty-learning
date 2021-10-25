@@ -106,6 +106,7 @@ public class ChatClient {
                                     System.out.println("gmembers [group name]");
                                     System.out.println("gjoin [group name]");
                                     System.out.println("gquit [group name]");
+                                    System.out.println("gremove [group name]");
                                     System.out.println("quit");
                                     System.out.println("==================================");
                                     String command = scanner.nextLine();
@@ -131,6 +132,9 @@ public class ChatClient {
                                             break;
                                         case "gquit":
                                             ctx.writeAndFlush(new GroupQuitRequestMessage(userName, s[1]));
+                                            break;
+                                        case "gremove":
+                                            ctx.writeAndFlush(new GroupRemoveRequestMessage(s[1]));
                                             break;
                                         case "quit":
                                             ctx.channel().close();

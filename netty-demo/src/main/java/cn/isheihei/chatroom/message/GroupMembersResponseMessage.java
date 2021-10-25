@@ -10,8 +10,12 @@ import java.util.Set;
 public class GroupMembersResponseMessage extends Message {
 
     private Set<String> members;
+    private boolean success;
+    private String reason;
 
-    public GroupMembersResponseMessage(Set<String> members) {
+    public GroupMembersResponseMessage(boolean success, String reason, Set<String> members) {
+        this.success = success;
+        this.reason = reason;
         this.members = members;
     }
 

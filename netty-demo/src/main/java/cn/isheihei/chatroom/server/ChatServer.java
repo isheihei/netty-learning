@@ -32,6 +32,7 @@ public class ChatServer {
         GroupJoinRequestHandler GROUP_JOIN_HANDLER = new GroupJoinRequestHandler();
         GroupMembersRequestHandler GROUP_MEMBERS_HANDLER = new GroupMembersRequestHandler();
         GroupQuitRequestHandler GROUP_QUIT_HANDLER = new GroupQuitRequestHandler();
+        GroupRemoveRequestHandler GROUP_REMOVE_HANDLER = new GroupRemoveRequestHandler();
         GroupChatRequestHandler GROUP_CHAT_HANDLER = new GroupChatRequestHandler();
         QuitHandler QUIT_HANDLER = new QuitHandler();
 
@@ -67,6 +68,7 @@ public class ChatServer {
                     socketChannel.pipeline().addLast(GROUP_JOIN_HANDLER);
                     socketChannel.pipeline().addLast(GROUP_MEMBERS_HANDLER);
                     socketChannel.pipeline().addLast(GROUP_QUIT_HANDLER);
+                    socketChannel.pipeline().addLast(GROUP_REMOVE_HANDLER);
                     socketChannel.pipeline().addLast(GROUP_CHAT_HANDLER);
                     socketChannel.pipeline().addLast(QUIT_HANDLER);
                 }
