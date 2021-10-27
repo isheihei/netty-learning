@@ -42,7 +42,7 @@ public class TestSerializer {
         //6. 对齐填充字节
         out.writeByte(0xff);
         //6. 获取内容的字节数组
-        byte[] bytes = Config.getSerializerAlgorithm().serializer(msg);
+        byte[] bytes = Config.getSerializerAlgorithm().serialize(msg);
         //7. 长度和序列化后的内容写入
         out.writeInt(bytes.length);
         out.writeBytes(bytes);

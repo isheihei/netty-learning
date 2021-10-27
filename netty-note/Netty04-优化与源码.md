@@ -435,16 +435,20 @@ java.net.SocketTimeoutException: connect timed out
 #### 3）ulimit -n
 
 * 属于操作系统参数
+* 允许从一个进程打开的文件描述符的数量
 
 
 
 #### 4）TCP_NODELAY
 
 * 属于 SocketChannal 参数
+* false 开启nagle算法
 
 
 
 #### 5）SO_SNDBUF & SO_RCVBUF
+
+- 发送缓冲区和接收缓冲区
 
 * SO_SNDBUF 属于 SocketChannal 参数
 * SO_RCVBUF 既可用于 SocketChannal 参数，也可以用于 ServerSocketChannal 参数（建议设置到 ServerSocketChannal 上）
