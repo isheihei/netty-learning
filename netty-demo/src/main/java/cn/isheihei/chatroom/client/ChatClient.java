@@ -73,7 +73,7 @@ public class ChatClient {
                         }
 
                         /**
-                         * 在连接建立后出发 active 事件
+                         * 在连接建立后触发 active 事件
                          */
                         @Override
                         public void channelActive(ChannelHandlerContext ctx) throws Exception {

@@ -1282,6 +1282,8 @@ protected void doBeginRead() throws Exception {
 
 ### 2.2 NioEventLoop 剖析
 
+![image-20211127161332898](img/image-20211127161332898.png)
+
 NioEventLoop 线程不仅要处理 IO 事件，还要处理 Task（包括普通任务和定时任务），
 
 提交任务代码 `io.netty.util.concurrent.SingleThreadEventExecutor#execute`
@@ -1588,6 +1590,8 @@ private void processSelectedKey(SelectionKey k, AbstractNioChannel ch) {
 
 
 ### 2.3 accept 剖析
+
+![image-20211127162508773](img/image-20211127162508773.png)
 
 nio 中如下代码，在 netty 中的流程
 
